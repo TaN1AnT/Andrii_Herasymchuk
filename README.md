@@ -1,5 +1,5 @@
 # Andrii_Herasymchuk
-## ___Steps to run files___
+## ___Steps to run files in JS_tasks___
 
 > 1. Download VS Code or other programm.
 > 2. Download Node.JS.
