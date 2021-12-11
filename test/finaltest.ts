@@ -14,7 +14,6 @@ describe('Test test', ()=> {
     let homepage: HomePage;
     let adminpage: AdminPage;
 
-
     before(async()=> {
         driver = await new Builder().forBrowser('chrome').build();
         loginpage = await new LoginPage(driver);
