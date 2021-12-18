@@ -4,7 +4,7 @@
   "description": "Selenium test project",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -r ts-node/register test/script.ts --reporter mochawesome"
+    "test": "mocha -r ts-node/register test/script.ts --reporter mochawesome --reporter mocha-teamcity-reporter"
   },
   "author": "Me",
   "license": "MIT",
@@ -22,6 +22,7 @@
     "chai": "^4.3.4",
     "jasmine": "^3.10.0",
     "mocha": "^9.1.3",
+    "mocha-teamcity-reporter": "^4.2.0",
     "mochawesome": "^7.0.1",
     "ts-node": "^10.4.0",
     "typings": "^2.1.1"
