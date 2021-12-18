@@ -1,0 +1,29 @@
+{
+  "name": "test-project",
+  "version": "1.0.0",
+  "description": "Selenium test project",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -r ts-node/register test/script.ts --reporter mochawesome"
+  },
+  "author": "Me",
+  "license": "MIT",
+  "keywords": [],
+  "dependencies": {
+    "axios": "^0.24.0",
+    "install": "^0.13.0",
+    "selenium-webdriver": "^4.1.0",
+    "typescript": "^4.5.4"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.0",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.11.14",
+    "chai": "^4.3.4",
+    "jasmine": "^3.10.0",
+    "mocha": "^9.1.3",
+    "mochawesome": "^7.0.1",
+    "ts-node": "^10.4.0",
+    "typings": "^2.1.1"
+  }
+}
