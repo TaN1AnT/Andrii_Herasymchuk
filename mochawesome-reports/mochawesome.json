@@ -1,0 +1,214 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-12-18T13:20:26.330Z",
+    "end": "2021-12-18T13:20:53.200Z",
+    "duration": 26870,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c0bc663a-9092-45d3-b595-d41479cb2bb0",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e70261d4-a3c4-4e65-9701-663ba4a60238",
+          "title": "Test test",
+          "fullFile": "D:\\VS code\\Selenium\\test\\finaltest.ts",
+          "file": "\\test\\finaltest.ts",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"Test test\"",
+              "fullTitle": "Test test \"before all\" hook in \"Test test\"",
+              "timedOut": false,
+              "duration": 1332,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new selenium_webdriver_1.Builder().forBrowser('chrome').build();\nloginpage = await new loginpage_1.default(driver);\nhomepage = await new homepage_1.default(driver);\nadminpage = await new adminpage_1.default(driver);",
+              "err": {},
+              "uuid": "fd53a97d-e87a-45ea-84b4-c2392621c03e",
+              "parentUUID": "e70261d4-a3c4-4e65-9701-663ba4a60238",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Test test\"",
+              "fullTitle": "Test test \"after all\" hook in \"Test test\"",
+              "timedOut": false,
+              "duration": 263,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "4fdf6754-70c3-4ba1-b05c-0433f1182af0",
+              "parentUUID": "e70261d4-a3c4-4e65-9701-663ba4a60238",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "login test",
+              "fullTitle": "Test test login test",
+              "timedOut": false,
+              "duration": 7629,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var url = 'https://opensource-demo.orangehrmlive.com/';\nawait loginpage.go_to_URL(url);\nawait loginpage.login_into('Admin', 'admin123');\n(0, chai_1.expect)(await loginpage.get_URL()).to.equal(\"https://opensource-demo.orangehrmlive.com/index.php/dashboard\");",
+              "err": {},
+              "uuid": "2e9ad1a2-db5d-4e9d-adac-e83355fccdb0",
+              "parentUUID": "e70261d4-a3c4-4e65-9701-663ba4a60238",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "open admin(users) page test",
+              "fullTitle": "Test test open admin(users) page test",
+              "timedOut": false,
+              "duration": 1752,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await homepage.go_to_admin_menu();\n(0, chai_1.expect)(await homepage.get_URL()).to.equal(\"https://opensource-demo.orangehrmlive.com/index.php/admin/viewSystemUsers\");",
+              "err": {},
+              "uuid": "c731ce49-167d-4850-a8a3-efd2f4f4c099",
+              "parentUUID": "e70261d4-a3c4-4e65-9701-663ba4a60238",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "add user test",
+              "fullTitle": "Test test add user test",
+              "timedOut": false,
+              "duration": 4646,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var usrn = 'dddddddddd';\nvar pass = 'ccccccccc';\nvar employeen = 'Alice Duval';\nawait adminpage.Add_User(usrn, pass, employeen);\n(0, chai_1.expect)(await adminpage.check_user(usrn, employeen)).to.equal(true);",
+              "err": {},
+              "uuid": "e8c00112-8936-46f9-9c13-433eb45b4719",
+              "parentUUID": "e70261d4-a3c4-4e65-9701-663ba4a60238",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "seach user test",
+              "fullTitle": "Test test seach user test",
+              "timedOut": false,
+              "duration": 4665,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var usrn = 'dddddddddd';\nvar employeen = 'Alice Duval';\nawait adminpage.search_check_user(usrn, employeen);\n(0, chai_1.expect)(await adminpage.check_user(usrn, employeen)).to.equal(true);",
+              "err": {},
+              "uuid": "b975b196-3a7e-4436-ae3f-f23146bc6a7f",
+              "parentUUID": "e70261d4-a3c4-4e65-9701-663ba4a60238",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "delete user test",
+              "fullTitle": "Test test delete user test",
+              "timedOut": false,
+              "duration": 6552,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var homeurl = 'https://opensource-demo.orangehrmlive.com/index.php/admin/viewSystemUsers';\nawait adminpage.chech_is_URL(homeurl);\nvar usrn = 'dddddddddd';\nvar employeen = 'Alice Duval';\nawait adminpage.delete_user(usrn, employeen);\n(0, chai_1.expect)(await adminpage.check_user(usrn, employeen)).to.equal(false);",
+              "err": {},
+              "uuid": "39d5e641-31df-46b6-bdcc-65f68f6f17db",
+              "parentUUID": "e70261d4-a3c4-4e65-9701-663ba4a60238",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2e9ad1a2-db5d-4e9d-adac-e83355fccdb0",
+            "c731ce49-167d-4850-a8a3-efd2f4f4c099",
+            "e8c00112-8936-46f9-9c13-433eb45b4719",
+            "b975b196-3a7e-4436-ae3f-f23146bc6a7f",
+            "39d5e641-31df-46b6-bdcc-65f68f6f17db"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 25244,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "9.1.3"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.0.1"
+    }
+  }
+}
