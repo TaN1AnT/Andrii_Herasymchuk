@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -r ts-node/register test/finaltest.ts"
+    "test": "mocha -r ts-node/register test/finaltest.ts --reporter mochawesome"
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +20,7 @@
     "@types/selenium-webdriver": "^4.0.16",
     "chai": "^4.3.4",
     "mocha": "^9.1.3",
+    "mochawesome": "^7.0.1",
     "ts-node": "^10.4.0",
     "typings": "^2.1.1"
   }
