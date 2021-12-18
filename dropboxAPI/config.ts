@@ -4,7 +4,7 @@ class Config{
     private static  uploadUrl: string = "https://content.dropboxapi.com/2/files/upload";
     private static  metaDataUrl: string = "https://api.dropboxapi.com/2/files/get_metadata";
     private static  deleteUrl: string = "https://api.dropboxapi.com/2/files/delete_v2";
-    private static  token: string = "vwPeWrYPYcAAAAAAAAAAAanrDbKQU40cNiHT8nUc-7ruKJ2Uwp2Bqs_LvyInmrEc";
+    private static  token: string = "rBlQrqTA6_UAAAAAAAAAATPHFmA_q1vEOeLNrj6Vwi2nO-MYiOUoKeH29NSPBNH4";
     private static  imagePath: string = "/img.jpg";
     private uploadFileConfig: AxiosRequestConfig;
     private getFileConfig: AxiosRequestConfig;
